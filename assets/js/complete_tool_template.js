@@ -1,4 +1,13 @@
 $(document).ready(function(){
+
+        /*
+        alert ("777")
+        if (!IsSupportedBrowser()){
+            window.location.replace("unsupported_browser.html");
+            return;
+        }
+        */
+        
         $(".selectable-view").hide()
 
         $(".change-view-but").click(function(){
