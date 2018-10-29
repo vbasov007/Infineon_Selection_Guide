@@ -1,13 +1,9 @@
+$('body').css('opacity', '0.5');
+
+
 $(document).ready(function(){
 
-        /*
-        alert ("777")
-        if (!IsSupportedBrowser()){
-            window.location.replace("unsupported_browser.html");
-            return;
-        }
-        */
-        
+
         $(".selectable-view").hide()
 
         $(".change-view-but").click(function(){
@@ -25,12 +21,14 @@ $(document).ready(function(){
 
         $(".change-view-but:first-child").trigger('click')
 
+        $('body').css('opacity', '1.0');
+
     });
 
 var tree = document.querySelectorAll('ul.tree a:not(:last-child)');
 for(var i = 0; i < tree.length; i++){
     tree[i].addEventListener('click', function(e) {
-                var parent = e.target.parentElement;
+                var parent = this.parentElement;//e.target.parentElement;
                 var classList = parent.classList;
                 if(classList.contains("open")) {
                     classList.remove('open');
