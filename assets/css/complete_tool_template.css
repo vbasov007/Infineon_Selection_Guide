@@ -64,6 +64,10 @@ ul.tree li.open > a:not(:last-child):before {
     color: black;
 }
 
+ul.tree li.open > a > span.new-prod-flag {
+	display: none;
+}
+
 li > a:last-child:hover{
 	background-color: gainsboro;
 }
@@ -209,4 +213,17 @@ a.main-menu-but.selected_main_menu_item {
     margin: 10px;
     font-weight: bold;
     color: var(--ifx-logo-red-color)
+}
+
+span.new-prod-flag {
+	font-size: 50%;
+	background-color: var(--ifx-berry-color);
+	color: white;
+	font-weight: bold;
+	padding: 2px;
+	margin: 2px;
+	border-radius: 5px;
+	/*text-align: center;*/
+	display: inline-block;
+	vertical-align: top;
 }
