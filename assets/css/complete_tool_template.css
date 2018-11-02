@@ -227,3 +227,7 @@ span.new-prod-flag {
 	display: inline-block;
 	vertical-align: top;
 }
+
+ul.tree li:not(.open).search-highlight {
+    background-color: var(--ifx-sand-color);
+}
