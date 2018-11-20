@@ -5,6 +5,8 @@ $( function () {
     initCollapsibleTree();
     initTextHighlight();
 
+    initProductPageRedirect();
+
     highlightDiscontinuedProducts();
 
     setStateAccordingInputVariables();

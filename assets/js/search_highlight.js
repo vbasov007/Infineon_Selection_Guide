@@ -22,7 +22,7 @@ function highlightText(search){
 
     if (search.length > 1) {
 
-        $('ul.tree li > a > span').each(function () {
+        $('ul.tree li > div > span').each(function () {
             let val = $(this).text().toLowerCase();
             if (val.match(search)) {
                 $(this).parent().parentsUntil('ul.tree').addClass('search-highlight-tree');

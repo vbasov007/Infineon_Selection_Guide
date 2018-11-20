@@ -20,7 +20,7 @@ function initCategorySwitches() {
 }
 
 function initCollapsibleTree() {
-    var tree = document.querySelectorAll('ul.tree a:not(:last-child)');
+    var tree = document.querySelectorAll('ul.tree div.branch:not(:last-child)');
     for(var i = 0; i < tree.length; i++){
         tree[i].addEventListener('click', function(e) {
             var parent = this.parentElement;//e.target.parentElement;
