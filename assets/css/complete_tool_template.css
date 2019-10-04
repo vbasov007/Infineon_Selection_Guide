@@ -22,7 +22,7 @@ div.product_table {
     display: none;
 }
 body {
-    font-family: "Arial";
+    font-family: "Arial", serif;
 }
 ul.tree li {
     list-style-type: none;
@@ -76,13 +76,14 @@ li > div.branch:last-child:hover{
 }
 */
 
-span.ds_link {
+.ds_link {
 	font-size: 70%;
 	color:blue;
  /*   text-decoration:underline;
 	cursor: pointer;*/
 	position: relative; 
 	top: -0.5em;
+	margin: 0.5em;
 }
 
 td {
@@ -90,9 +91,11 @@ td {
 }
 
 table, td {
-    border: 1px solid var(--ifx-engineering-color);
+    border: 1px solid #928285; /*var(ifx-engineering-color)*/
     border-collapse: collapse;
 	color: black;
+	padding-right:5px;
+	padding-left:5px;
 }
 
 
@@ -104,11 +107,11 @@ th {
 
 
 th {
-    background: var(--ifx-ocean-color);
+    background: #9BC3B7; /*var(--ifx-ocean-color)*/
 }
 
 tr td:first-child {
-    background: var(--ifx-ocean-color);
+    background: #9BC3B7; /*var(--ifx-ocean-color)*/
     font-weight: bold;
 	color: black
 }
@@ -116,7 +119,7 @@ tr td:first-child {
 
 
 a.main-menu-but:hover {
-    color: var(--ifx-logo-red-color);
+    color: #E30034; /*var(--ifx-logo-red-color)*/
 }
 
 
@@ -127,32 +130,36 @@ span.package, span.housing {
 
 span.technology {
     font-weight: bold;
-    color: var(--ifx-berry-dark-color);
+    color: #812161; /*var(--ifx-berry-dark-color)*/
 }
 
 span.configuration {
     font-weight: bold;
-    color: var(--ifx-berry-dark-color);
+    color: #812161; /*var(--ifx-berry-dark-color)*/
 }
 
 span.features {
     font-weight: bold;
-    color: var(--ifx-berry-dark-color);
+    color: #812161; /*var(--ifx-berry-dark-color)*/
 }
 
 span.qualification, span.applications {
     font-weight: bold;
-    color: var(--ifx-berry-dark-color);
+    color: #812161; /*var(--ifx-berry-dark-color)*/
 }
 
 
-span.product {
+.product {
     font-weight: bold;
-    color: var(--ifx-logo-blue-color);
+    color: #005DA9; /*var(--ifx-logo-blue-color);*/
+	text-decoration: none;
 }
-span.product:hover {
+
+
+.product:hover {
     font-weight: bold;
-    color: var(--ifx-logo-red-color);
+    color: #E30034; /*var(--ifx-logo-red-color)*/
+	text-decoration: none;
 }
 
 span.measure_value {
@@ -162,7 +169,7 @@ span.measure_value {
 
 span.measure_unit {
     font-weight: bold;
-    color: var(--ifx-engineering-color);
+    color: #928285; /*var(ifx-engineering-color)*/
 }
 
 td.nowrap{
@@ -174,70 +181,60 @@ td.nowrap{
 }
 
 button {
-	margin-top: 1px;
-	margin-bottom: 1px;
-	margin-right: 1px;
-	margin-left: 0px;
-	
-	background-color: var(--ifx-ocean-color);
+    margin: 1px 1px 1px 0;
+
+    background-color: #9BC3B7; /*var(--ifx-ocean-color)*/
 	font-weight: bold;
-	color: var(--ifx-engineering-dark-color);
+	color: #644F54; /*var(--ifx-engineering-dark-color);*/
 	opacity: 0.7;
 
 	border: 0;
 	box-shadow: none;
-	border-radius: 0px;
+	border-radius: 0;
 }
 
 button:hover {
-background-color: var(--ifx-engineering-color);
+background-color: #928285; /*var(ifx-engineering-color)*/
 }
 
 button.pressed {
-	background-color: var(--ifx-berry-color);
+	background-color: #AB377A; /*var(--ifx-berry-color);*/
 	font-weight: bold;
 	color: white;
 	opacity: 1.0
 }
 
 span.buttons_header {
-    font-family: Verdana;
-    font-weight: bold
+    font-family: Verdana, serif;
+    font-weight: bold;
 }
 
 a.main-menu-but {
 	font-size: 15px;
 	padding: 19px 11px 22px;
 	text-decoration: none;
-	color: var(--ifx-logo-blue-color);
-	//white-space: nowrap;
+	color: #005DA9; /*var(--ifx-logo-blue-color);*/
+	/*white-space: nowrap;*/
 }
 
-/*
-a.main-menu-but:visited{
-	margin: 10px;
-	text-decoration: none;
-	color: var(--ifx-logo-blue-color);
-}
-*/
 a.main-menu-but:hover {
-	color: var(--ifx-logo-red-color);
+	color: #E30034; /*var(--ifx-logo-red-color)*/
 }
 
 a.main-menu-but.selected_main_menu_item {
 	font-weight: bold;
-	color: var(--ifx-logo-red-color);
+	color: #E30034; /*var(--ifx-logo-red-color)*/
 }
 
 #download_zip_link {
     margin: 10px;
     font-weight: bold;
-    color: var(--ifx-logo-red-color)
+    color: #E30034; /*var(--ifx-logo-red-color);*/
 }
 
 span.new-prod-flag {
 	font-size: 50%;
-	background-color: var(--ifx-berry-color);
+	background-color: #AB377A; /*var(--ifx-berry-color);*/
 	color: white;
 	font-weight: bold;
 	padding: 2px;
@@ -250,11 +247,11 @@ span.new-prod-flag {
 
 
 .search-highlight {
-    background-color: var(--ifx-sand-dark-color);
+    background-color: #E36319; /*var(--ifx-sand-dark-color);*/
 }
 
 li:not(.open).search-highlight-tree > div.branch:not(:last-child) > span{
-    background-color: var(--ifx-sand-color);
+    background-color: #FFE054; /*var(--ifx-sand-color);*/
 }
 
 div.branch {
@@ -263,7 +260,7 @@ div.branch {
 }
 
 ul.main-menu {
-	margin: 0px;
+	margin: 0;
 	padding-left: 0;
 	display: inline;
 	white-space:normal;
@@ -278,8 +275,8 @@ ul.main-menu > li > a {
 
 
 .navbar ul {
-	padding: 0px;
-	margin: 0px;
+	padding: 0;
+	margin: 0;
 	list-style: none;
 	position: relative;
 	display: inline;
